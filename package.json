@@ -1,0 +1,12 @@
+{
+  "name": "electron-training",
+  "version": "1.0.0",
+  "description": "electron training example",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^13.1.7"
+  }
+}
