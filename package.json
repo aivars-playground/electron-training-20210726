@@ -4,9 +4,15 @@
   "description": "electron training example",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:package": "electron-packager . --out=out",
+    "build:deb": "electron-installer-debian --src=out/electron-training-linux-x64 --dest=out/installers/ --arch=amd64",
+    "build:snap": "electron-installer-snap --src out/electron-training-linux-x64"
   },
   "devDependencies": {
-    "electron": "^13.1.7"
+    "electron": "^13.1.7",
+    "electron-installer-debian": "^3.1.0",
+    "electron-installer-snap": "^5.1.0",
+    "electron-packager": "^15.3.0"
   }
 }

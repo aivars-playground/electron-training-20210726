@@ -41,7 +41,7 @@ app.on(`ready`, _ => {
     const menu = Menu.buildFromTemplate(menuTemplate)
     Menu.setApplicationMenu(menu)
 
-    const tray = new Tray(`./src/icon.png`)
+    const tray = new Tray(`./resources/Icon.png`)
     tray.setContextMenu(
         Menu.buildFromTemplate(
             [{label:`<empty>`, enabled: false}]
